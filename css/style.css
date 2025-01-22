@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/* 基本タグ  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 95%;
+	min-width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	background-color: #ffffff;
+	font-size:12px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+	color: #333;
+}
+
+
+a {
+	font-weight: bold;
+	transition: color 0.5s;
+	text-decoration: none;
+	color: #333;
+}
+a:visited {
+	color : #333;
+}
+a:hover{
+	color : #ff7043;
+}
+
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+
+h1 {
+	width: 97%;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+	background-color: #eee;
+	border-left: 5px solid #333;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	margin-top: 15px;
+	padding-top: 5px;
+	padding-left: 2%;
+	padding-bottom: 5px;
+}
+h2 {
+	width: 95%;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+	background-color: #eee;
+	border-left: 5px solid #333;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	margin-top: 15px;
+	margin-left: 5px;
+	padding-top: 5px;
+	padding-left: 2%;
+	padding-bottom: 5px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 2px;
+	padding-left: 3%;
+	padding-bottom: 4px;
+	border-left: 5px solid #353535;
+	border-bottom: 1px solid #666;
+	font-weight: bold;
+}
+h4 { }
+h5 { }
+
+footer {
+	width: 99%;
+	background-color: #89c7de;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+
+	position: absolute;/*←絶対位置*/
+	bottom: 0; /*下に固定*/
+
+	font-size:10px;
+}
+
+/* テーブル  */
+table {
+	width: 100%;
+	background-color: #eee;
+	border: solid 1px #aaa;
+}
+
+th {
+	background-color: #ddd;
+}
+.h3_history_data1 {
+	background-color: #dfdfdf;
+	width: 110px;
+	text-align: left;
+	padding-left: 10px;
+}
+.h3_history_data2 {
+	background-color: #d0d0d0;
+	width: 110px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+td {
+	background-color: #eee;
+	padding-left: 10px;
+}
+
+.h3_mem_data {
+	width: 25%;
+}
+.h3_mem_hex {
+	width: 25%;
+}
+.h3_history_naiyo1 {
+	background-color: #efefef;
+}
+.h3_history_naiyo2 {
+	background-color: #e0e0e0;
+}
+
+
+
+
+/* DIVクラス  */
+
+.wrapper {
+	width: 1000px;
+	height: 100%;
+	min-height: 100vh;
+	position: relative;/*←相対位置*/
+	padding-bottom: 120px;/*←footerの高さ*/
+	box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+
+	border: solid 1px #aaa;
+	padding: 5px;
+	background: #ddd;
+}
+
+.header {
+	height: 100px;
+	border: solid 1px #aaa;
+	margin: 5px;
+	background: #eee;
+}
+
+.header_tytle {
+	height: 60px;
+}
+
+
+.header_nav {
+	height: 40px;
+}
+
+
+.main { }
+
+.cont_box {
+	width: 800px;
+	border: solid 1px #aaa;
+	margin: 5px;
+	background: #ccc;
+}
+
+.h3_img {
+	border: solid 1px #aaa;
+	margin: 5px;
+	background: #bbb;
+	height:320px;/* 仮 */
+}
+
+.h3_img img {
+	border: solid 1px #ff0;
+	padding: 5px;
+	
+}
+
+
+.h3_text {
+	border: solid 1px #aaa;
+	margin: 5px;
+	background: #bbb;
+}
+
+.h3_text p {
+	color:#111;
+	font-size:14px;
+	letter-spacing: 0.8px;
+	line-height: 20px;
+	padding: 5px 0 0 0;
+}
+
+.negatev_span {/* footerかぶり防止スペース…ほんとはよくないんだけどね */
+	height: 100px;
+}
+
+
+
+
+/* NAVクラス  */
+
+.menu_block {
+	width: 100%;
+	height: auto;
+	clear: both;
+}
+
+.menu {
+display: flex;
+}
+
+.menu_li_01 {/* top */
+	display: block;
+	margin: 0 5px 0 10px;
+	width: 15%;
+	text-align: center;
+	background: #ddd;
+}
+.menu_li_02 {/* xciss */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ccc;
+}
+.menu_li_03 {/* Neg */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ddd;
+}
+.menu_li_04 {/* pucca */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ccc;
+}
+.menu_li_05 {/* yorupi */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ddd;
+}
+.menu_li_06 {/* parupunte */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ccc;
+}
+.menu_li_07 {/* tsukigumo */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ddd;
+}
+.menu_li_08 {/* gakkisousha */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 9%;
+	text-align: center;
+	background: #ccc;
+}
+.menu_li_09 {/* yukigaze-mon */
+	display: block;
+	margin: 0 5px 0 5px;
+	width: 12%;
+	text-align: center;
+	background: #ddd;
+}
+.menu_li_10 {/* history */
+	display: block;
+	margin: 0 10px 0 5px;
+	width: 10%;
+	text-align: center;
+	background: #ccc;
+}
+#menu_li_now {/* now */
+	background: #b92e34;/* Neon Red */
+	font-weight: bold;
+	color: #fff;
+}
